@@ -15,6 +15,10 @@ public class E4 {
         int m = nums1.length;
         int n = nums2.length;
         int mid = (m + n) / 2;
+        if(m+n==0){
+            return 0;
+        }
+
         if(m==0){
             return n%2==1 ? nums2[mid]:(nums2[mid-1]+nums2[mid])/2.0;
         }else if(n==0){
