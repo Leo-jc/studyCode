@@ -12,7 +12,9 @@ import java.util.Scanner;
  * @Version: 1.0
  */
 public class Q3 {
+    public static void main(String[] args) {
 
+    }
 }
 
 
