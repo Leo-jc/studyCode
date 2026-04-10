@@ -21,5 +21,7 @@ public class E3655 {
             int v = query[3];
             if((r-l)/k%2==0) ans^=v;
         }
+
+        return ans;
     }
 }
