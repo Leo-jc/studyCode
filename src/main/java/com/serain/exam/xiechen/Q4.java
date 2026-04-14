@@ -60,7 +60,7 @@ public class Q4 {
                 res[0][0]=res[0][0]*base[0][0]+res[0][1]*base[1][0];
                 res[0][1]=res[0][0]*base[0][1]+res[0][1]*base[1][1];
                 res[1][0]=res[1][0]*base[0][0]+res[1][1]*base[1][0];
-                res[1][1]=res[1][0]*base[0][1]+res[1][1]*base[1][]
+                res[1][1]=res[1][0]*base[0][1]+res[1][1]*base[1][1];
             }
             n/=2;
             base[0][0]=base[0][0]*base[0][0]+base[0][1]*base[1][0];
