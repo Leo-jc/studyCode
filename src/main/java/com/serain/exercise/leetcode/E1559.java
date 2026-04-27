@@ -1,4 +1,4 @@
-
+package com.serain.exercise.leetcode;
 
 /**
  * @BelongsProject: studyCode
