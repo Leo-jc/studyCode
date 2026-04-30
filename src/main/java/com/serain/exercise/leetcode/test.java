@@ -11,13 +11,12 @@ import java.util.*;
  * @Version: 1.0
  */
 public class test {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        Set<String> set = new HashSet<>();
-        Iterator<String> iterator = set.iterator();
-        while (iterator.hasNext()) {
-            String next = iterator.next();
-            System.out.println(next);
-        }
-        return null;
+    public static void main(String[] args) {
+        int a = 9;
+        int b = a++;
+        int c = ++a;
+        int d = c--;
+        int e = --d;
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e);
     }
 }
