@@ -1,5 +1,7 @@
 package com.serain.exercise.leetcode;
 
+import java.lang.reflect.Proxy;
+
 /**
  * @BelongsProject: studyCode
  * @BelongsPackage: com.serain.exercise.leetcode
