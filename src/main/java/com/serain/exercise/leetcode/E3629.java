@@ -74,3 +74,58 @@ public class E3629 {
             }
         }
 }
+
+class Solution3629 {
+    public static final int MAX_NUM=1000001;
+    public static final List<Integer>[] graph=new ArrayList[MAX_NUM];
+    private static boolean initialized = false;
+
+    public void initGraph(){
+        if (initialized) {
+            return;
+        }
+        initialized = true;
+        Arrays.setAll(graph, _ -> new ArrayList<>());
+        for (int i = 2; i < MAX_NUM; i++) {
+            if (graph[i].isEmpty()) { // i 是质数
+                for (int j = i; j < MAX_NUM; j += i) { // i 的倍数有质因子 i
+                    graph[j].add(i);
+                }
+            }
+        }
+    }
+    public int minJumps(int[] nums) {
+        initGraph();
+        int n=nums.length;
+        Map<Integer,List<Integer>> map=new HashMap<>();
+        for(int i=0;i<n;i++){
+            for(int j:graph[nums[i]]){
+                map.computeIfAbsent(j,k->new ArrayList<>()).add(i);
+            }
+        }
+        Queue<Integer> q=new LinkedList<>();
+        q.offer(0);
+        boolean[] vis=new boolean[n];
+        vis[0]=true;
+        int ans=0;
+        while(true){
+            int size=q.size();
+            while(size-->0&&!q.isEmpty()){
+                int cur=q.poll();
+                if(cur==n-1) return ans;
+                List<Integer> idx=map.getOrDefault(nums[cur],new ArrayList<>());
+                idx.add(cur+1);
+                if(cur > 0) idx.add(cur-1);
+                for(int id:idx){
+                    if(!vis[id]){
+                        vis[id]=true;
+                        q.offer(id);
+                    }
+                }
+                idx.clear();
+            }
+            ans++;
+        }
+    }
+
+}
