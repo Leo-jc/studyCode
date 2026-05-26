@@ -10,7 +10,7 @@ import java.util.Stack;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-01  10:07
- * @Description: TODO
+ * @Description: LeetCode 第 2751 题
  * @Version: 1.0
  */
 public class E2751 {

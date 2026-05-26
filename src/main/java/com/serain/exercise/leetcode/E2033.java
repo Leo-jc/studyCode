@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-28  10:04
- * @Description: TODO
+ * @Description: LeetCode 第 2033 题
  * @Version: 1.0
  */
 public class E2033 {

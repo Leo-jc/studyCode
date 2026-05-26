@@ -8,7 +8,7 @@ import java.util.Map;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-17  10:34
- * @Description: TODO
+ * @Description: LeetCode 第 3761 题
  * @Version: 1.0
  */
 public class E3761 {

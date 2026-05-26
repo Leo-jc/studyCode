@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @BelongsPackage: com.serain.exam.dewu
  * @Author: Serain
  * @CreateTime: 2026-04-26  18:47
- * @Description: TODO
+ * @Description: 得物笔试笔试题
  * @Version: 1.0
  */
 public class Q3 {

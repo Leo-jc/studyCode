@@ -9,7 +9,7 @@ import java.util.Stack;
  * @BelongsPackage: com.serain.exercise
  * @Author: Serain
  * @CreateTime: 2026-03-16  12:10
- * @Description: TODO
+ * @Description: LeetCode 第 902 题
  * @Version: 1.0
  */
 public class E902 {

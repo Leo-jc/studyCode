@@ -9,7 +9,7 @@ import java.util.TreeSet;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-06  19:49
- * @Description: TODO
+ * @Description: LeetCode 第 874 题
  * @Version: 1.0
  */
 public class E874 {

@@ -7,7 +7,7 @@ import java.util.*;
  * @BelongsPackage: com.serain.exercise
  * @Author: Serain
  * @CreateTime: 2026-03-16  16:43
- * @Description: TODO
+ * @Description: LeetCode 第 1878 题
  * @Version: 1.0
  */
 public class E1878 {

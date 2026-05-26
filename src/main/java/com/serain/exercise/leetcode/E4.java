@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @BelongsPackage: com.serain.exercise
  * @Author: Serain
  * @CreateTime: 2026-03-14  20:51
- * @Description: TODO
+ * @Description: LeetCode 第 4 题
  * @Version: 1.0
  */
 public class E4 {

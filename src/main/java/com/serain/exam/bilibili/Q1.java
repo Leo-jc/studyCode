@@ -7,7 +7,7 @@ import java.util.*;
  * @BelongsPackage: com.serain.exam.bilibili
  * @Author: Serain
  * @CreateTime: 2026-05-03  12:01
- * @Description: TODO
+ * @Description: B站笔试笔试题
  * @Version: 1.0
  */
 public class Q1 {

@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-05-01  20:34
- * @Description: TODO
+ * @Description: LeetCode 第 396 题
  * @Version: 1.0
  */
 public class E396 {

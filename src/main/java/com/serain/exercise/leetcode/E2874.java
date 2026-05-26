@@ -8,7 +8,7 @@ import java.util.OptionalInt;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-05-14  10:12
- * @Description: TODO
+ * @Description: LeetCode 第 2874 题
  * @Version: 1.0
  */
 public class E2874 {

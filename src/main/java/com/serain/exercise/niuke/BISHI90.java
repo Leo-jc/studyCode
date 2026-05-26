@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @BelongsPackage: com.serain.exercise.niuke
  * @Author: Serain
  * @CreateTime: 2026-04-08  16:06
- * @Description: TODO
+ * @Description: 牛客网第 90 题
  * @Version: 1.0
  */
 public class BISHI90 {

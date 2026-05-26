@@ -8,7 +8,7 @@ import java.util.TreeMap;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-03-20  09:35
- * @Description: TODO
+ * @Description: LeetCode 第 3567 题
  * @Version: 1.0
  */
 public class E3567 {

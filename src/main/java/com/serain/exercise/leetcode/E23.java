@@ -11,7 +11,7 @@ import java.util.Queue;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-03-28  18:47
- * @Description: TODO
+ * @Description: LeetCode 第 23 题
  * @Version: 1.0
  */
 public class E23 {

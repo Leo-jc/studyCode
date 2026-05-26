@@ -7,7 +7,7 @@ import java.util.*;
  * @BelongsPackage: com.serain.exam.huawei
  * @Author: Serain
  * @CreateTime: 2026-04-28  23:24
- * @Description: TODO
+ * @Description: 华为笔试笔试题
  * @Version: 1.0
  */
 public class Q1 {

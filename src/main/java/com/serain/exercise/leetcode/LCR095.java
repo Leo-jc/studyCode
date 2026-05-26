@@ -5,7 +5,7 @@ package com.serain.exercise.leetcode;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-03-18  20:15
- * @Description: TODO
+ * @Description: LCR095功能描述
  * @Version: 1.0
  */
 public class LCR095 {

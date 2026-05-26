@@ -10,7 +10,7 @@ import java.util.Map;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-23  10:55
- * @Description: TODO
+ * @Description: LeetCode 第 2651 题
  * @Version: 1.0
  */
 public class E2651 {

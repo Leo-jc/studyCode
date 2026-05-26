@@ -8,7 +8,7 @@ import java.util.List;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-22  10:41
- * @Description: TODO
+ * @Description: LeetCode 第 2452 题
  * @Version: 1.0
  */
 public class E2452 {

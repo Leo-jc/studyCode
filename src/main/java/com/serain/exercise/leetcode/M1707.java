@@ -10,7 +10,7 @@ import java.util.Map;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-05-14  15:04
- * @Description: TODO
+ * @Description: M1707功能描述
  * @Version: 1.0
  */
 public class M1707 {

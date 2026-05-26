@@ -5,7 +5,7 @@ package com.serain.exam.huawei;
  * @BelongsPackage: com.serain.huawei
  * @Author: Serain
  * @CreateTime: 2026-05-18  10:56
- * @Description: TODO
+ * @Description: 华为笔试笔试题
  * @Version: 1.0
  */
 public class Test {

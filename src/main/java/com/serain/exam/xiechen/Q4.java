@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @BelongsPackage: com.serain.exam.xiechen
  * @Author: Serain
  * @CreateTime: 2026-04-12  09:57
- * @Description: TODO
+ * @Description: 携程笔试笔试题
  * @Version: 1.0
  */
 public class Q4 {

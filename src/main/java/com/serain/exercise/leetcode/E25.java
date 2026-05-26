@@ -7,7 +7,7 @@ import com.serain.parameter.ListNode;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-03-28  18:27
- * @Description: TODO
+ * @Description: LeetCode 第 25 题
  * @Version: 1.0
  */
 public class E25 {

@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @BelongsPackage: com.serain.exam.jingdong
  * @Author: Serain
  * @CreateTime: 2026-05-14  13:33
- * @Description: TODO
+ * @Description: demo功能描述
  * @Version: 1.0
  */
 public class demo {

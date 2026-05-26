@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-03-28  18:44
- * @Description: TODO
+ * @Description: LeetCode 第 148 题
  * @Version: 1.0
  */
 public class E148 {

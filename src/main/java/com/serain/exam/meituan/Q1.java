@@ -7,7 +7,7 @@ import java.util.*;
  * @BelongsPackage: com.serain.exam.meituan
  * @Author: Serain
  * @CreateTime: 2026-03-28  09:46
- * @Description: TODO
+ * @Description: 美团笔试笔试题
  * @Version: 1.0
  */
 public class Q1 {

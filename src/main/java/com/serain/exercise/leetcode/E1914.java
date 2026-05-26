@@ -9,7 +9,7 @@ import java.util.List;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-05-09  16:53
- * @Description: TODO
+ * @Description: LeetCode 第 1914 题
  * @Version: 1.0
  */
 public class E1914 {

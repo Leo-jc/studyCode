@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-05-24  13:27
- * @Description: TODO
+ * @Description: LeetCode 第 1340 题
  * @Version: 1.0
  */
 public class E1340 {

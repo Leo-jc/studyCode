@@ -5,7 +5,7 @@ package com.serain.exercise.leetcode;
  * @BelongsPackage: com.serain.exercise.leetcode
  * @Author: Serain
  * @CreateTime: 2026-04-20  10:20
- * @Description: TODO
+ * @Description: LeetCode 第 2078 题
  * @Version: 1.0
  */
 public class E2078 {

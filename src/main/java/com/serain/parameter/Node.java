@@ -5,7 +5,7 @@ package com.serain.parameter;
  * @BelongsPackage: com.serain.parameter
  * @Author: Serain
  * @CreateTime: 2026-03-28  18:37
- * @Description: TODO
+ * @Description: Node功能描述
  * @Version: 1.0
  */
 public class Node {

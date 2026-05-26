@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @BelongsPackage: com.serain.exam.jingdong
  * @Author: Serain
  * @CreateTime: 2026-04-14  15:17
- * @Description: TODO
+ * @Description: test功能描述
  * @Version: 1.0
  */
 public class test {
