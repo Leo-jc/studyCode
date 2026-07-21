@@ -5,13 +5,20 @@
   <groupId>com.serain</groupId>
   <artifactId>studyCode</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>studyCode</name>
   <url>http://maven.apache.org</url>
 
+  <modules>
+    <module>algorithms</module>
+    <module>tools/todo-scanner</module>
+  </modules>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -25,8 +32,10 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.42</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>

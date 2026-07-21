@@ -2,87 +2,133 @@
 
 算法学习与练习项目 - 专注于数据结构、算法和编程能力提升
 
-## 📋 项目简介
+## 项目简介
 
-本项目是一个综合性的算法学习仓库，包含了 LeetCode 练习题、双周赛/单周赛题目、各大厂面试笔试题以及基础数据结构和操作系统的学习代码。
+本项目是一个综合性的算法学习仓库，包含了 LeetCode 练习题、双周赛/单周赛题目、各大厂面试笔试题以及基础数据结构和操作系统的学习代码。LeetCode 题解按算法类型分类组织，便于系统化学习和复习。
 
-## 🏗️ 项目结构
+## 项目结构
 
 ```
-studyCode/
-├── src/main/java/com/serain/
-│   ├── exercise/              # 日常练习
-│   │   ├── leetcode/         # LeetCode 练习题 (E1-E3779+)
-│   │   └── niuke/            # 牛客网练习题
-│   ├── doubleweekgame/       # LeetCode 双周赛题目
-│   │   ├── game174/         # 第 174 场双周赛
-│   │   ├── game175/         # 第 175 场双周赛
-│   │   └── game178/         # 第 178 场双周赛
-│   ├── singleweekgame/       # LeetCode 单周赛题目
-│   │   ├── game485/         # 第 485 场单周赛
-│   │   ├── game486/         # 第 486 场单周赛
-│   │   └── game492/         # 第 492 场单周赛
-│   ├── exam/                 # 大厂面试笔试题
-│   │   ├── alibaba/         # 阿里巴巴
-│   │   ├── bytedance/       # 字节跳动
-│   │   ├── jingdong/        # 京东
-│   │   ├── meituan/         # 美团
-│   │   ├── tencent/         # 腾讯
-│   │   └── xiechen/         # 协辰
-│   ├── study/                # 学习代码
-│   │   ├── dataStructure/   # 数据结构实现
-│   │   └── os/              # 操作系统相关 (生产者消费者、单例模式等)
-│   └── parameter/            # 公共参数类
-│       ├── ListNode.java    # 链表节点定义
-│       ├── Node.java        # 通用节点定义
-│       └── TreeNode.java    # 树节点定义
-└── src/test/                 # 测试代码
+studyCode/                          # Maven 多模块项目 (父 POM)
+├── algorithms/                     # 算法练习模块
+│   └── src/main/java/com/serain/
+│       ├── exercise/leetcode/      # LeetCode 题解（按算法分类）
+│       │   ├── array/             # 数组 (32 题)
+│       │   ├── backtracking/      # 回溯 (5 题)
+│       │   ├── binarysearch/      # 二分查找 (10 题)
+│       │   ├── bitmanipulation/   # 位运算 (12 题)
+│       │   ├── design/            # 设计题 (1 题)
+│       │   ├── dp/                # 动态规划 (32 题)
+│       │   ├── graph/             # 图论 (13 题)
+│       │   ├── greedy/            # 贪心 (13 题)
+│       │   ├── heap/              # 堆/优先队列 (5 题)
+│       │   ├── linkedlist/        # 链表 (10 题)
+│       │   ├── math/              # 数学 (15 题)
+│       │   ├── matrix/            # 矩阵 (16 题)
+│       │   ├── monotonic/         # 单调栈/单调队列 (2 题)
+│       │   ├── simulation/        # 模拟 (6 题)
+│       │   ├── slidingwindow/     # 滑动窗口 (11 题)
+│       │   ├── special/           # LCR/面试题 (4 题)
+│       │   ├── stack/             # 栈与队列 (4 题)
+│       │   ├── string/            # 字符串 (15 题)
+│       │   ├── tree/              # 树 (8 题)
+│       │   └── trie/              # 字典树 (2 题)
+│       ├── exercise/niuke/        # 牛客网练习题 (10 题)
+│       ├── doubleweekgame/        # LeetCode 双周赛
+│       │   ├── game174/
+│       │   ├── game175/
+│       │   ├── game178/
+│       │   └── game186/
+│       ├── singleweekgame/        # LeetCode 单周赛
+│       │   ├── game485/
+│       │   ├── game486/
+│       │   ├── game492/
+│       │   └── game508/
+│       ├── exam/                  # 大厂面试笔试题
+│       │   ├── alibaba/          # 阿里巴巴 (6 题)
+│       │   ├── bilibili/         # B站 (2 题)
+│       │   ├── bytedance/        # 字节跳动
+│       │   ├── dewu/             # 得物 (4 题)
+│       │   ├── huawei/           # 华为 (4 题)
+│       │   ├── jingdong/         # 京东 (2 题)
+│       │   ├── meituan/          # 美团 (3 题)
+│       │   ├── tencent/          # 腾讯
+│       │   ├── wangyi/           # 网易 (2 题)
+│       │   └── xiechen/          # 携程 (4 题)
+│       ├── study/                 # 学习代码
+│       │   ├── dataStructure/    # 数据结构实现
+│       │   └── os/               # 操作系统相关
+│       └── parameter/             # 公共数据结构类
+│           ├── ListNode.java
+│           ├── Node.java
+│           └── TreeNode.java
+├── tools/
+│   └── todo-scanner/              # TODO 扫描工具（独立模块）
+│       └── src/main/java/com/serain/tools/scanner/
+│           ├── TodoScanner.java
+│           ├── BatchFixer.java
+│           ├── ScanReport.java
+│           └── TodoItem.java
+└── pom.xml                        # 父 POM
 ```
 
-## 📊 题目统计
+## 题目统计
 
-### LeetCode 练习
-- **题目数量**: 100+ 道
-- **难度分布**: 简单、中等、困难
-- **涵盖主题**:
-  - 数组与字符串
-  - 链表
-  - 树与二叉树
-  - 动态规划
-  - 回溯算法
-  - 贪心算法
-  - 滑动窗口
-  - 二分查找
-  - 图论
-  - 并查集
-  - 堆与优先队列
+### LeetCode 练习 (216 题)
+
+| 算法分类 | 题目数 | 代表题目 |
+|---------|--------|---------|
+| 数组 (array) | 32 | E4, E15, E31, E56, E75, E128, E283, E287, E560 |
+| 动态规划 (dp) | 32 | E53, E62, E64, E70, E72, E139, E198, E279, E300, E322, E416, E516 |
+| 数学 (math) | 15 | E396, E1344, E1545, E1980, E2033, E3020, E3300, E3756 |
+| 矩阵 (matrix) | 16 | E48, E54, E74, E1292, E1582, E1727, E1861, E3070 |
+| 字符串 (string) | 15 | E5, E67, E696, E796, E1404, E1758, E1967, E3120 |
+| 位运算 (bitmanipulation) | 12 | E136, E190, E693, E762, E868, E1356, E1680, E2657 |
+| 图论 (graph) | 13 | E417, E1306, E1345, E1559, E1722, E2812, E2976, E3558 |
+| 贪心 (greedy) | 13 | E11, E45, E55, E121, E763, E1288, E1536, E1877 |
+| 滑动窗口 (slidingwindow) | 11 | E3, E76, E438, E1004, E1358, E1461, E1888, E1984 |
+| 二分查找 (binarysearch) | 10 | E33, E34, E35, E153, E744, E1855, E3464, E3532 |
+| 链表 (linkedlist) | 10 | E2, E19, E24, E25, E61, E138, E142, E206, E234 |
+| 模拟 (simulation) | 6 | E874, E1291, E1914, E2946, E3633, E3653 |
+| 回溯 (backtracking) | 5 | E51, E79, E131, E401, E1415 |
+| 堆 (heap) | 5 | E23, E148, E347, E3296, E3507 |
+| 树 (tree) | 8 | E98, E102, E108, E110, E543, E1832, E2196, E1022 |
+| 栈 (stack) | 4 | E20, E32, E2130, E2751 |
+| 特殊 (special) | 4 | E2942, E3161, LCR095, M1707 |
+| 字典树 (trie) | 2 | E2977, E3093 |
+| 单调栈 (monotonic) | 2 | E239, E3660 |
+| 设计 (design) | 1 | E2069 |
 
 ### 竞赛题目
-- **双周赛**: 3 场 (game174, game175, game178)
-- **单周赛**: 3 场 (game485, game486, game492)
-- **每题包含**: 题目描述、解题思路、完整代码实现
+- **双周赛**: 4 场 (game174, game175, game178, game186)
+- **单周赛**: 4 场 (game485, game486, game492, game508)
 
 ### 大厂面试题
-- **阿里巴巴**: 3 道
-- **字节跳动**: 测试题
-- **京东**: 测试题
-- **美团**: 3 道
-- **腾讯**: 测试题
-- **协辰**: 4 道
+- **阿里巴巴**: 6 题 (含 AI 方向)
+- **B站**: 2 题
+- **得物**: 4 题
+- **华为**: 4 题
+- **京东**: 2 题
+- **美团**: 3 题
+- **携程**: 4 题
+- **网易**: 2 题
 
-## 🛠️ 技术栈
+### 牛客网练习
+- 10 道笔试题 (BISHI 系列)
 
-- **语言**: Java 21
-- **构建工具**: Maven
+## 技术栈
+
+- **语言**: Java 22
+- **构建工具**: Maven (多模块)
 - **依赖库**:
   - Lombok 1.18.42 (简化代码)
   - JUnit 3.8.1 (单元测试)
 - **IDE**: IntelliJ IDEA
 
-## 🚀 快速开始
+## 快速开始
 
 ### 环境要求
-- JDK 21+
+- JDK 22+
 - Maven 3.6+
 - IntelliJ IDEA (推荐)
 
@@ -104,13 +150,12 @@ mvn clean install
 mvn test
 ```
 
-4. **运行特定题目**
+4. **运行 TODO 扫描工具**
 ```bash
-# 修改 E102.java 中的 main 方法后运行
-mvn exec:java -Dexec.mainClass="com.serain.exercise.leetcode.E102"
+java -cp tools/todo-scanner/target/classes com.serain.tools.scanner.BatchFixer
 ```
 
-## 📝 代码规范
+## 代码规范
 
 ### 命名规范
 - 类名：大驼峰命名 (PascalCase) - 如 `E102`, `Q1`
@@ -119,106 +164,30 @@ mvn exec:java -Dexec.mainClass="com.serain.exercise.leetcode.E102"
 
 ### 代码结构
 每个题目文件包含：
-- 作者信息注释
-- 题目描述
+- Javadoc 注释 (`@BelongsProject`, `@BelongsPackage`, `@Author`, `@CreateTime`, `@Description`)
 - 解题方法实现
-- 必要的输入输出示例
 
 ### 包结构
-- `com.serain.exercise` - 日常练习
+- `com.serain.exercise.leetcode.<category>` - LeetCode 题解（按算法分类）
+- `com.serain.exercise.niuke` - 牛客网练习
 - `com.serain.doubleweekgame` - 双周赛
 - `com.serain.singleweekgame` - 单周赛
 - `com.serain.exam` - 大厂面试题
 - `com.serain.study` - 学习代码
-- `com.serain.parameter` - 公共参数类
+- `com.serain.parameter` - 公共数据结构类
+- `com.serain.tools.scanner` - TODO 扫描工具
 
-## 📚 学习路线
-
-### 第一阶段：基础数据结构
-- [x] 链表 (ListNode)
-- [x] 树 (TreeNode)
-- [ ] 堆 (Heap)
-- [ ] 图 (Graph)
-
-### 第二阶段：基础算法
-- [x] 排序算法
-- [x] 查找算法
-- [ ] 递归与分治
-- [ ] 回溯算法
-
-### 第三阶段：高级算法
-- [ ] 动态规划
-- [ ] 贪心算法
-- [ ] 图论算法
-- [ ] 字符串算法
-
-### 第四阶段：实战演练
-- [x] LeetCode 热题 HOT 100
-- [x] 周赛/双周赛
-- [ ] 大厂面试真题
-- [ ] 专项突破
-
-## 🔥 热门题目
-
-### 高频面试题
-- [E2](src/main/java/com/serain/exercise/leetcode/E2.java) - 两数相加 (链表操作)
-- [E15](src/main/java/com/serain/exercise/leetcode/E15.java) - 三数之和 (双指针)
-- [E20](src/main/java/com/serain/exercise/leetcode/E20.java) - 有效的括号 (栈)
-- [E23](src/main/java/com/serain/exercise/leetcode/E23.java) - 合并 K 个升序链表 (堆)
-- [E139](src/main/java/com/serain/exercise/leetcode/E139.java) - 单词拆分 (动态规划)
-
-### 经典算法
-- [E53](src/main/java/com/serain/exercise/leetcode/E53.java) - 最大子数组和 (动态规划)
-- [E76](src/main/java/com/serain/exercise/leetcode/E76.java) - 最小覆盖子串 (滑动窗口)
-- [E79](src/main/java/com/serain/exercise/leetcode/E79.java) - 单词搜索 (回溯)
-- [E128](src/main/java/com/serain/exercise/leetcode/E128.java) - 最长连续序列 (并查集)
-
-## 🎯 学习目标
-
-- ✅ 掌握常见数据结构的实现和应用
-- ✅ 熟练运用各类经典算法
-- ✅ 提升代码编写能力和调试技巧
-- ✅ 培养算法思维和问题分析能力
-- ✅ 为技术面试做好充分准备
-
-## 📖 推荐资源
+## 推荐资源
 
 ### 在线平台
 - [LeetCode](https://leetcode.com/) - 全球领先的算法刷题平台
 - [牛客网](https://www.nowcoder.com/) - 国内知名的 IT 求职平台
-- [力扣中国](https://leetcode-cn.com/) - LeetCode 中文版
 
 ### 学习资料
 - 《算法导论》- 经典算法教材
 - 《剑指 Offer》- 面试必备算法题
 - 《LeetCode 101》- 算法入门指南
 
-## 🤝 贡献指南
-
-欢迎贡献代码和题解！
-
-1. Fork 本项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
-
-## 📄 许可证
-
-本项目仅供学习交流使用
-
-## 👤 作者
-
-- **Serain** - 初始创建者
-
-## 📧 联系方式
-
-如有问题或建议，欢迎通过 Issue 反馈。
-
-## 🌟 致谢
-
-感谢所有为开源社区做出贡献的开发者！
-
 ---
 
-**Happy Coding! 🎉**
+**Happy Coding!**
